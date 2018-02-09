@@ -1,9 +1,7 @@
 # Arduino-SteamVR-controller
-The arduino code for one of my other projects, where i try to emulate Vive controllers with Leap Motion, and an Arduino based custom built controller
 
 # What is this?
-This is the code of my custom built motion controller, used for my other project, where I try to emulat Vive controllers. The buttons and the orientation
-are from two of these controllers, and the positional data is from a Leap Motion.
+This is the code of my custom built motion controller made from a set of Razer Hydras with a TeensyLC and a MPU9250. For use in conjunction with the Leap Motion in Virtual Reality.
 
 # Known issues
 - Currently the orientation data is the built-on DMP's (Digital Motion Processor)  output, without any further processing. It's quite good and stable, 
@@ -15,9 +13,10 @@ but it uses only the gyroscope, and the accelerometer, not the magnetometer. Wit
 - Add Bluetooth, and a battery, to enable wireless operation.
 
 # Build process
-I've built two of these controllers, from an Arduino Nano, an MPU-9255 IMU, and a cheap one-handed controller from ebay.
-Some photos from the build process can be found here: http://imgur.com/gallery/ihOr1
+I've built one of these controllers so far, from a TeensyLC, MPU2950 and the button and joystick daughter board from a set of Razer Hydras.
 
 # Special thanks
 Thanks for github user rpicopter, for the DMP enabled motion processing library for the MPU9250. I used this, to get the DMP data from my MPU-9255.
 https://github.com/rpicopter/ArduinoMotionSensorExample
+
+Thanks to githug user peter10110 who built this entire project of which I am just modifying to my spec.
